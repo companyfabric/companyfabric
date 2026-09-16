@@ -1,57 +1,60 @@
 # CompanyFabric
 
-[CompanyFabric](https://companyfabric.com/) is a developer-focused AI gateway
-that provides one API for working with models from multiple providers. The
-service is designed to make it easy to add AI capabilities to products,
-internal tools, and agent workflows without integrating every provider
-separately.
+[CompanyFabric](https://companyfabric.com/) is an AI gateway and developer
+platform for using many leading models through one OpenAI-compatible API, one
+API key, and one prepaid balance.
 
-## Features
+## What is on companyfabric.com
 
-- **One API key for many models**: Access models from providers such as
-  Anthropic, OpenAI, Google, DeepSeek, and others through one integration.
-- **OpenAI-compatible API**: Existing OpenAI SDK integrations can be moved to
-  CompanyFabric by changing the API base URL and key.
-- **Flexible model selection**: Choose a specific model or let CompanyFabric
-  select a model that is best, fastest, or most cost-effective for a request.
-- **Transparent metering**: See token usage and request costs, including cost
-  information in API responses.
-- **Budget controls**: Set spending limits for API keys to help prevent
-  unexpected usage.
-- **Bring your own key (BYOK)**: Use provider credentials managed by your
-  organization with no additional CompanyFabric platform fee.
-- **Playground**: Test prompts and compare models before adding an integration
-  to an application.
-- **Agent and workflow friendly**: Use the API with agent frameworks,
-  automation tools, and multimodal jobs for image, audio, and video workloads.
+- **Model library**: Browse the current catalog of OpenAI, Anthropic, Google,
+  xAI, DeepSeek, Kimi, GLM, and other models in the
+  [models directory](https://companyfabric.com/models).
+- **Chat and playground**: Try prompts in the browser, switch models quickly,
+  and see estimated and metered usage in the
+  [playground](https://companyfabric.com/playground/).
+- **Comparisons and pricing**: Compare model options, pricing, and example
+  code from the [models directory](https://companyfabric.com/models) and
+  the [compare hub](https://companyfabric.com/compare), plus
+  per-model pages such as
+  [GPT-6 Astra](https://companyfabric.com/models/openai/gpt-6-astra).
+- **Developer docs**: Start with the
+  [API documentation](https://companyfabric.com/docs),
+  [quickstart](https://companyfabric.com/docs/quickstart),
+  [authentication](https://companyfabric.com/docs/authentication),
+  [models and IDs](https://companyfabric.com/docs/models), and
+  [error handling](https://companyfabric.com/docs/errors).
+- **Agent setup**: Install CompanyFabric for agent workflows from the
+  [agents install page](https://companyfabric.com/agents/install).
+
+## Core product features
+
+- **One API key for many models**: Use one integration across many providers.
+- **OpenAI-compatible API**: Move existing OpenAI SDK or cURL integrations by
+  changing the base URL and API key.
+- **Flexible routing**: Pick a specific model or use meta-models such as
+  `companyfabric/auto`.
+- **Transparent metering**: Review usage and exact request cost in API
+  responses and in the playground.
+- **Budget controls**: Set spending caps for API keys.
+- **Bring your own key (BYOK)**: Use provider credentials with a 0% platform
+  fee from CompanyFabric.
+- **Agent-friendly workflows**: Use CompanyFabric with tools such as Claude
+  Code, LangChain, the Vercel AI SDK, and n8n, including the
+  [Claude Code integration](https://companyfabric.com/integrations/claude-code).
 
 ## How it works
 
-1. **Create an account** at [companyfabric.com](https://companyfabric.com/)
-   and create an API key. New accounts receive starter credits to try the
-   service.
-2. **Point your client at CompanyFabric** using
-   `https://api.companyfabric.com/v1` as the API base URL.
-3. **Send a normal OpenAI-compatible request**, selecting a model such as
-   `companyfabric/auto` or a model from the [model library](https://companyfabric.com/models).
-4. **Inspect usage and cost** in the response and monitor your balance and
-   budget limits from the dashboard.
+1. **Create an account** at [companyfabric.com/signup](https://companyfabric.com/signup)
+   and get an API key.
+2. **Point your client at CompanyFabric** with
+   `https://api.companyfabric.com/v1`.
+3. **Send a standard chat request** with `companyfabric/auto` or a specific
+   model from the [model library](https://companyfabric.com/models).
+4. **Inspect usage and cost** in the response and manage budgets from the
+   dashboard.
 
-## Pricing
-
-CompanyFabric uses usage-based pricing rather than a required subscription:
-
-- Prepay a balance and use it across supported models.
-- The price depends on the model and the amount of usage.
-- The playground and dashboard show current model rates and estimated request
-  costs before you run a request.
-- BYOK usage has a **0% CompanyFabric platform fee**; the underlying provider's
-  pricing still applies.
-- Starter credits are available for new accounts.
-
-Rates can change as providers update their pricing. See the
-[CompanyFabric website](https://companyfabric.com/) and dashboard for current
-model prices.
+New accounts can get started with starter credits, and the platform uses
+usage-based pricing instead of a required subscription.
 
 ## Developer quickstart
 
@@ -89,20 +92,23 @@ curl https://api.companyfabric.com/v1/chat/completions \
   }'
 ```
 
-Keep API keys in environment variables or a secret manager; do not commit
-them to source control.
+Keep API keys in environment variables or a secret manager; do not commit them
+to source control.
 
-## Documentation and integrations
+## Documentation and links
 
-- [Documentation](https://companyfabric.com/docs)
-- [Quickstart](https://companyfabric.com/docs/quickstart)
-- [Model library](https://companyfabric.com/models)
 - [CompanyFabric website](https://companyfabric.com/)
-
-The API can be used with the OpenAI SDK, cURL, Python, LangChain, the Vercel
-AI SDK, Claude Code, n8n, and other clients that support an OpenAI-compatible
-endpoint. Consult the documentation for authentication, supported models,
-usage reporting, budget configuration, and asynchronous jobs.
+- [Model library](https://companyfabric.com/models)
+- [Playground](https://companyfabric.com/playground/)
+- [API documentation](https://companyfabric.com/docs)
+- [Quickstart](https://companyfabric.com/docs/quickstart)
+- [Authentication](https://companyfabric.com/docs/authentication)
+- [Models & IDs](https://companyfabric.com/docs/models)
+- [Media Jobs](https://companyfabric.com/docs/jobs)
+- [Error handling](https://companyfabric.com/docs/errors)
+- [Compare](https://companyfabric.com/compare)
+- [Claude Code integration](https://companyfabric.com/integrations/claude-code)
+- [Install for agents](https://companyfabric.com/agents/install)
 
 ## Repository
 
