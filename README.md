@@ -14,6 +14,7 @@ API key, and one prepaid balance.
   [playground](https://companyfabric.com/playground/).
 - **Comparisons and pricing**: Compare model options, pricing, and example
   code from the [models directory](https://companyfabric.com/models) and
+  the [compare hub](https://companyfabric.com/compare), plus
   per-model pages such as
   [GPT-6 Astra](https://companyfabric.com/models/openai/gpt-6-astra).
 - **Developer docs**: Start with the
@@ -38,7 +39,8 @@ API key, and one prepaid balance.
 - **Bring your own key (BYOK)**: Use provider credentials with a 0% platform
   fee from CompanyFabric.
 - **Agent-friendly workflows**: Use CompanyFabric with tools such as Claude
-  Code, LangChain, the Vercel AI SDK, and n8n.
+  Code, LangChain, the Vercel AI SDK, and n8n, including the
+  [Claude Code integration](https://companyfabric.com/integrations/claude-code).
 
 ## How it works
 
@@ -102,7 +104,10 @@ to source control.
 - [Quickstart](https://companyfabric.com/docs/quickstart)
 - [Authentication](https://companyfabric.com/docs/authentication)
 - [Models & IDs](https://companyfabric.com/docs/models)
+- [Media Jobs](https://companyfabric.com/docs/jobs)
 - [Error handling](https://companyfabric.com/docs/errors)
+- [Compare](https://companyfabric.com/compare)
+- [Claude Code integration](https://companyfabric.com/integrations/claude-code)
 - [Install for agents](https://companyfabric.com/agents/install)
 
 ## Repository
